@@ -43,14 +43,13 @@ int main(){
     // }
 
         // usinf functions we caluclate the combunation 
-     
-
+    
       int nfact = fact(n);
       int rfact = fact(r);
       int nrfact = fact(n-r);
-    
-
-
     int ncr = combination(n, r);
+    int npr  = permutaion(n, r);
     cout<<ncr;
+                                       
 }
+
