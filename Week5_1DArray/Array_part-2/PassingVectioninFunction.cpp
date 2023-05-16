@@ -3,6 +3,10 @@
 #include<algorithm>
 // #include<cmath>
 using namespace std;
+void change(vector<int> &a){
+    a[0] = 100;
+}
+
 int main(){
 vector<int>v;
 
@@ -13,21 +17,13 @@ vector<int>v;
     v.push_back(11);
     // cout<<v.at(2);
     for(int i=0; i<v.size(); i++){
-    cout<<v.at(i)<<" ";}
-    sort(v.begin(), v.end());
-    
-    
-            
-
- 
-
-}
-cout<<endl;
-
+      cout<<v[i]<<" ";
+    }
+    cout<<endl;
+    change(v);
+    for(int i=0; i<v.size(); i++){
+      cout<<v[i]<<" ";
+    }
 
 
 }
-
-
-
-

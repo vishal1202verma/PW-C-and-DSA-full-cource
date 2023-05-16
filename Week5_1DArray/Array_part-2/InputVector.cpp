@@ -8,5 +8,5 @@ for(int i=0; i<5; i++){
     cin>>x;
     v.push_back(x);
 }
-
+cout<<v.size();
 }
