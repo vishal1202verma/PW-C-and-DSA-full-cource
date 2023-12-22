@@ -3,7 +3,7 @@ using namespace std;
 int main(){
    int x= 10;
    int*p = &x;
-   cout<<*p; // deference operator *P
+   cout<<&x; // deference operator *P
 
     
 }

@@ -1,22 +1,22 @@
 #include<iostream>
 using namespace std;
 int main(){
-  
+
 //   if-else question practice
 
 //  ques-1 find given  number is sum or odd 
-int n ;
+int n;
 cout<<"enter any integer n :" ;
 cin>>n;
 if( n%2 ==0){
-    cout<<"number is sum"<<endl;
+    cout<<"number is sum :"<<endl;
     cout<<endl;
 
 }
-else{
-    cout<<"number is odd"<<endl;
+else{;
+    cout<<"number is odd :"<<endl;
 }
- 
+  
 // ques -2 given an integer print absolute value of integer 
 
 int x;
@@ -54,7 +54,6 @@ else{
  
 // ques 4 if Take 3 numbers input and tell if they can be the sides of a triangle
 
-
 int a,b,c;
 cout<<"enter any integer a:";
 cin>>a;
@@ -68,9 +67,6 @@ if((a+b>c) && (a+c>b) &&  (c+b>a)){
 else{
     cout<<"not traingle's sides";
 }
-    
- 
 
-
-
+cout<<"code is written by vishal verma ";
 }

@@ -2,12 +2,12 @@
 using namespace std;
 int main (){
 // ques WAP to pint factorial of a number 
-
+int m;
 int n;
 cout<<"enter a number :";
 cin>>n;
 int product =1;
-int i;
+
 
 for (int  i = 1; i<=n; i++)
 {
@@ -15,5 +15,6 @@ for (int  i = 1; i<=n; i++)
 
 }
 cout<<product;
+return 0;
 
 }

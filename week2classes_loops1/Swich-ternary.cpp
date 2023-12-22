@@ -5,11 +5,7 @@ int main(){
 // ternary operator   
  int x;
  cin>>x;
-
  (x%2==0) ? cout<<"even" : cout<<"odd";
- cout<<endl;
-
-  
 
 //  ques no 2
 

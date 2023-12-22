@@ -17,7 +17,9 @@ int main (){
            cout<<l;
         }
         
-
+        
         cout<<endl;
+        
     }
+    
 }

@@ -5,8 +5,7 @@ int main(){
     // int y = 12;
     // int sum = x+y;
     //  cout<<sum;
-
-
+    
 // incement and decrement 
 
 int x= 5;
@@ -15,7 +14,6 @@ cout<<x<<endl;
 cout<<x<<endl;
 x++; //post -increment
 cout<<x<<endl;
-
 
 //  float opratons
 float p =23;
@@ -56,13 +54,4 @@ float intrest =23;
 float si = (principle*rate*intrest)/1000;
 cout<<si<<endl; 
 
-
-
-
-
-
 }
-
-
-
-

@@ -4,7 +4,6 @@ int main(){
 
 // relationnal oprator  
 
-
 int x =3;
 cout<<(x=7)<<endl;
 cout<<endl;
@@ -15,19 +14,11 @@ bool r = true ;
 cout<<(p == q == r)<<endl;
 cout<<endl;
 
-
-
-// char data types 
+// char data types vishalvermao.pcm121@gmail.com
 
 char ch = 'a';
 // cout<<ch;
 cout<<(int)ch; // ASCII values of each character
-
-
-
-
-
-
 
 
 }

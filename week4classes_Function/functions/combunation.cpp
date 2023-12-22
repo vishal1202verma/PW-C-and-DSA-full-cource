@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 int fact(int x){
     int f = 1;
     for(int i=2; i<=x; i++){
@@ -42,13 +41,13 @@ int main(){
     //     nrfact *= i;
     // }
 
-        // usinf functions we caluclate the combunation 
+        // using functions we caluclate the combunation 
     
       int nfact = fact(n);
       int rfact = fact(r);
       int nrfact = fact(n-r);
-    int ncr = combination(n, r);
-    int npr  = permutaion(n, r);
+      int ncr = combination(n, r);
+      int npr  = permutaion(n, r);
     cout<<ncr;
                                        
 }

@@ -34,12 +34,7 @@ int main(){
     cout<<"invalid";
     break;
  }
+    
 
-
-
-
-
-
-
-
+ 
 }

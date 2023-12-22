@@ -1,2 +1,4 @@
-cout<<"enter the number of rows :";
-    // cin>>n;
+for (int l=1; l<=i-1; l++)
+        {
+           cout<<l;
+        }

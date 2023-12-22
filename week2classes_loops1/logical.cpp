@@ -1,20 +1,20 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 int main(){
    
-// ques no 1 number is thre digit or not
+// ques no-1 number is three digit or not
 cout<<"enter any number :";
 int n;
 cin>>n;
-if (n>=100 && n<=999){
-    cout<<"Three Digit Number"<<endl;
-
+if( n>=100 && n<=999){
+   cout<<"entered number is three digit"<<endl;
 }
 else{
-    cout<<"not a three digit number"<<endl;
+   cout<<"entered number is not three digit"<<endl;
 }
 
-// ques no 2  take 3 positive int input and print the greatest of them 
+// Ques No-2 // take 3 positive int input and print the greatest of them 
  int a, b, c;
  cout<<"enter the integer a:";
  cin>>a;
@@ -24,7 +24,7 @@ else{
  cin>>c;
  if(a>b && a>c){
     cout<<a<<endl;
-
+    
  }
  if (a<b && b>c  )
  {
@@ -35,10 +35,9 @@ else{
  {
     cout<<c<<endl;
  }
- 
+   
 
-
-// ques no 3 write a program to check wheather a char ia an alphabet or not
+// ques no 3 write a program to check wheather a char is an alphabet or not
 
 char ch;
 cout<<"enter the character:";
@@ -52,7 +51,6 @@ else {
 }
 
 
-
 // nested if-else 
 // Take positive  integer input and tell if it is divisible by 5 or 3 but not divisible by 15
 
@@ -60,10 +58,7 @@ int num ;
 // cout<< "enter any integer number :";
 // cin>>num;
 // if ( (num%5 == 0 || num%3 == 0) && num%15!= 0){
-//    cout<<"number is divisible by 5 or 3 but not divisible by 15"<<endl;
-
-   
-   
+//    cout<<"number is divisible by 5 or 3 but not divisible by 15"<<endl;   
 // }
 // else{
 //    cout<<"not matching the condition"<<endl;
@@ -83,7 +78,7 @@ else{
 }
 
 // else if questions 
-//ques no 6 take input marks of astudent and print the grade acoording to marks
+//ques no 6 take input marks of a student and print the grade acoording to marks
 
 // int marks ;
 // cout<<"ënter students's marks";
@@ -142,6 +137,3 @@ int mark;
 
 
 }
-
-
-

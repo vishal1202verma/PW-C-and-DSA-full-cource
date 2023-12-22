@@ -14,12 +14,16 @@ void starTraingle(int x){
     }
 
 }
+void greeting (){
+    cout<<"hello verma ji !";
+}
 
 int main(){
  
    starTraingle(3);
    starTraingle(4);
    starTraingle(5);
-  
+   greeting();
+   
 }
 
