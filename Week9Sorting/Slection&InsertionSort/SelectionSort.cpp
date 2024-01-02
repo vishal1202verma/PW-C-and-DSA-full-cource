@@ -2,14 +2,16 @@
 #include<climits>
 using namespace std;
 int main (){
-int arr[] = {5,-3, 5,-4,2};
+int arr[] = {-5, 3, -4,21,12};
 int n= 5;
+cout<<"this is the unsorted array :";
 for(int ele:arr){
  cout<<ele<<" " ;// for each loop
 }
 cout<<endl;
 // selection sort
-for(int i=0;  i<n; i++){
+//unsorted array 
+for(int i=0;  i<n-1; i++){
     int min = INT_MAX;
     int mindx = -1;
         for(int j=i; j<n; j++){
@@ -21,11 +23,13 @@ for(int i=0;  i<n; i++){
         }    
         swap(arr[i], arr[mindx]); 
 }   
-
+cout<<"this is the sorted version of array by the selction sort method :";
 for(int ele:arr){
  cout<<ele<<" " ;// for each loop
 }
-
+cout<<endl;
+// Time Complexcity is O(n^2);
+cout<<"vishal verma ji !";
 
 
 }
