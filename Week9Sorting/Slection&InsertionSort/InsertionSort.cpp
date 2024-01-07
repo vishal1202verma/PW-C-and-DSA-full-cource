@@ -21,7 +21,7 @@ while(j>=1){
     j--;
 }
  
-cout<<"this is the sorted array :";
+// cout<<"this is the sorted array :";
 for(int ele:arr){
  cout<<ele<<" " ;// for each loop
 }
