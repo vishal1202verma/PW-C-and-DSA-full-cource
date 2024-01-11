@@ -22,6 +22,7 @@ while(i<g.size() && j<s.size()){
       }
 
 }
-cout<<count;
 
+cout<<"this is the sorted array :"<<count<<endl;
+cout<<"code wriiten by the vishal verma ji";
 }
