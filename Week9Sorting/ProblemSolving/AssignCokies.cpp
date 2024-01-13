@@ -25,4 +25,5 @@ while(i<g.size() && j<s.size()){
 
 cout<<"this is the sorted array :"<<count<<endl;
 cout<<"code wriiten by the vishal verma ji";
+cout<<"today i also not completed my task of coding ";
 }
