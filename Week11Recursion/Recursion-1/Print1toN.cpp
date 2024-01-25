@@ -2,9 +2,9 @@
 using namespace std;
 void print(int i, int n){
        if(i>n) return ; 
-       cout<<i<<endl;
+       cout<<i<<" ";
        print(i+1, n);
-    
+        
 }
 
 int main (){
@@ -13,6 +13,7 @@ cout<<"enter any inetegr n :";
 cin>>n;
 cout<<endl;
 print(1, n);
+
 
 
 
