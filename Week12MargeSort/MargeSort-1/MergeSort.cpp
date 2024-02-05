@@ -54,7 +54,9 @@ void mergeSort(vector<int>&v){
      mergeSort(b);
 
      // merge 
-     merge(a, b, v);          
+     merge(a, b, v);   
+     a.clear();
+     b.clear();
 
 }
 int main (){
@@ -69,6 +71,7 @@ mergeSort(v);
 for(int i=0; i<v.size(); i++){
     cout<<v[i]<<" ";
 }
+// spanatuta toh dill bada jalta hai ha thora dard hua par chalta hain 
 
 
 }
