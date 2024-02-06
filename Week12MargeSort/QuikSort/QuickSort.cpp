@@ -47,11 +47,18 @@ int main (){
     cout<<arr[i]<<" "; 
   }
   cout<<endl;
+  cout<<"The sortated array is here --> ";
   QuickSort(arr, 0, n-1);
   for(int i=0; i<n; i++){
     cout<<arr[i]<<" "; 
   }
-   
-    
+
+ // Time Complexcity ==> O(n.logn);
+ // Space Complexcity ==> O(logn); // Space Consuption in call stack 
+ // This is not stable
+ 
+ 
+        
+
 
 }
