@@ -47,7 +47,4 @@ int k = 3;
 cout<<kthSmallest(a, 0, n-1, k);
 
 
-
-
-
 }
