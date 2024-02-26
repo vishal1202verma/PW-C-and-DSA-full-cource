@@ -1,5 +1,15 @@
 #include<iostream>
 using namespace std;
 int main (){
-    cout<<"vishal verma ji";
+    int a ;
+    cin>>a;
+    int b;
+    cin>>b;
+    if(a &&b == 2){
+        cout<<"true";
+    }
+    else{
+        cout<<"false";
+        
+    }
 }
