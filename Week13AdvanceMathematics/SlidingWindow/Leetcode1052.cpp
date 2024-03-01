@@ -17,7 +17,7 @@ int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int minutes) {
             maxloss = prevloss;
             int maxId = 0;
             int i= 1;
-            int j = k;
+            int j = k;                                           
             while(j<n){
                 int currloss = prevloss;
                 if(grumpy[j] == 1) currloss += customers[j];
