@@ -41,7 +41,7 @@ int longestSubarray(vector<int>& nums) {
     int n  = sizeof(arr)/sizeof(arr[0]);
     vector<int>nums(arr, arr+n);
     cout<<longestSubarray(nums);
-    
+      
 
 
 
