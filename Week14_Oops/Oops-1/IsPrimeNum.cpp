@@ -16,11 +16,29 @@ void IsPrime(int num){
   }
   
 }
+void printFactors(int n){
+    for(int i=1; i<=sqrt(n); i++){
+        if(n%i ==0) {
+        cout<<i<<" ";
+        if( i != sqrt(n)) cout<<n/i<<" ";
+        }
+    }  
+}
 int main (){
     int num;
     cout<<"Enter any num :";
     cin>>num;
-    IsPrime(num);
-       
+    // IsPrime(num);
+    // printFactors(num);
+     int factors = 1;
+        int sum = 0;
+         for(int i=1; i<num; i++){
+             if(num%i ==0){
+                factors = i;
+               cout<<factors<<" "<<endl;
+               sum += factors;
+             }
+         }
+         cout<<sum;   
         
 }
