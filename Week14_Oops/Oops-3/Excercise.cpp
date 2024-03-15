@@ -49,9 +49,18 @@ indianTeam.setAge(35);
 indianTeam.setNotestMatches(100);
 indianTeam.setAvgScore(60);
 
+cricketer virat;
+virat.setName("virat");
+virat.setAge(32);
+virat.setNotestMatches(250);
+virat.setAvgScore(65);
 
-cout<<indianTeam.getNameofGreatplayer();
+cricketer arr[2] = { virat, indianTeam};
 
+
+cout<<indianTeam.getNameofGreatplayer()<<endl;
+cout<<arr[0].getNameofGreatplayer()<<endl;
+cout<<arr[1].getNameofGreatplayer();
 
 
 }
