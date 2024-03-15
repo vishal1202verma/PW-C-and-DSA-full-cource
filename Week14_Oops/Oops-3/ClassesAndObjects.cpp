@@ -69,13 +69,14 @@ player sanket = getMAxScore(vishal , Ragav );
 cout<<sanket.getScore()<<endl;
 
 // Dynamic memory allocations
-
+// it occures by using pointers for run time memory allocation 
 player *shree = new player; // run time , dynamic memory allocation
 shree->setScore(100);
 shree->setHealth(101);
 shree->setAge(20);
 
 cout<<shree->getScore();
+
 
 
 
