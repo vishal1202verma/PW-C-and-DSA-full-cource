@@ -4,12 +4,12 @@
 #include<algorithm>
 #include<climits>
 using namespace std;
-class Bike{
-   public :
+class Bike{ // class is creator 
+     public :
      int tyreSize; // datatyeps 
      int engineSize; // datatypes
 
-    Bike( int tyreSize, int engineSize){ // constructor creation 
+     Bike( int tyreSize, int engineSize){ // constructor creation 
     // values initilized
     this->tyreSize = tyreSize;
     this->engineSize = engineSize;
@@ -29,7 +29,7 @@ cout<<TVS.tyreSize<<" "<<TVS.engineSize<<endl;
 cout<<honda.tyreSize<<" "<<honda.engineSize<<endl;
 cout<<sujuki.tyreSize<<" "<<bajaj.engineSize <<endl;
 cout<<bajaj.tyreSize<<" "<<sujuki.engineSize<<endl;
-    
+cout<<"vishal verma ji ";    
 
 
 
