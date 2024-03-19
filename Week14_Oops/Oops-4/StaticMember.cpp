@@ -21,7 +21,7 @@ class bike {
       
       
     //   }
-    static void increaseNoOfBikes(){
+    static void increaseNoOfBikes(){ // static function creation
           noOfBikes++;
     }
 
@@ -43,7 +43,8 @@ int main (){
  honda.increaseNoOfBikes();                                          
  cout<<honda.noOfBikes<<endl;
  cout<<bajaj.noOfBikes<<endl;
- cout<<"written by vishal verma ji ";
- 
-   
+ cout<<"written by vishal verma";
+
+
+  
 }
