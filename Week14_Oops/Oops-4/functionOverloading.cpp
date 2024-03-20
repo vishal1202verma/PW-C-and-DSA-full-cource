@@ -11,6 +11,9 @@ void add( int a){
 }
 
 int main (){
-  add(10, 20);
+  add(20, 5);
+  add(20);
 
 }
+
+
