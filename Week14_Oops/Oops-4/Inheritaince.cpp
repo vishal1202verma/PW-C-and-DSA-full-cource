@@ -10,7 +10,7 @@ class vehical{
     string companyName;
     // fuction member of the class 
     void showCompany(){
-       cout<<"show the company name";
+       cout<<"show the company name :";
                                                             
     }
 
@@ -44,7 +44,7 @@ class A{
     protected: // protected canot be acced bu can inherited
     int a_ka_protected;
 
-    public : // can be acced and inherited
+    public : // can be accessed and inherited
      int a_ka_public;              
 
 };
@@ -58,6 +58,16 @@ class B : public A { // B is the child of the A class
 
 //    private :
 //    int b_ka_private;
+
+};
+
+class c : public B{ 
+    public :
+    int c_ka_public ;
+
+    void showC(){
+        cout<<"b_ka_public";
+    }
 
 };
 
@@ -79,4 +89,8 @@ int main (){
     cout<<endl;
     cout<<honda.tyreSize<<endl;   
     cout<<"vishal verma ji now facing resistance from myself to work bu now i will do my work with more focus and dedication";
+    // success is your duty !
+    
+
+
 }    
