@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 
 class Node{
@@ -14,7 +15,6 @@ class Node{
 };
 
 int main (){
-
 Node a(10);
 Node b(20);
 Node c(30);
@@ -35,7 +35,13 @@ Node temp = a;
 while( 1){
     cout<<temp.val<<" ";
     if(temp.next == NULL);
-    temp = *(temp.next);
+    temp = *(temp.next);  // derefence operator
+    
 }
+
+
+
+
+
 
 }
