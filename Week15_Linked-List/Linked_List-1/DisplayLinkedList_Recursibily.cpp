@@ -15,8 +15,8 @@ class Node{
 };
 void displayRec(Node* head){
     if( head == NULL) return;
-    cout<<head->val<<" ";
     displayRec( head->next);
+    cout<<head->val<<" ";
 }
   
 
