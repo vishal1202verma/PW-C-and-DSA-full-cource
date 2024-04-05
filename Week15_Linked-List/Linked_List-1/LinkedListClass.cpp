@@ -1,5 +1,6 @@
 #include<iostream>
 #include<algorithm>
+#include<climits>
 using namespace std;
 
 class Node{ // user defined datatypes;
@@ -32,15 +33,14 @@ void insertAtEnd( int val){
     }
     size++;
 }
-void display(){
-     
-
-
-}
 
 };
+void display(){        
+      cout<<"display it";  
+   
+}
 int main (){
-
+display();
     
 
 }
