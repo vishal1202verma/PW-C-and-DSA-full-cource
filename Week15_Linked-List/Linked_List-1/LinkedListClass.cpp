@@ -15,18 +15,19 @@ Node( int val){
 }
 };
 
-class LinkedList{ // user defined dataStructure
+class LinkedList{ // user defined data Structure
+public :
  Node* head;
  Node* tail;
  int size;
- LinkedList(){
+ LinkedList(){ // constructor
     head = tail = NULL;
     size = 0;
  }
       
 void insertAtEnd( int val){
     Node* temp = new Node(val);
-    if( size ==0) head = tail = NULL;
+    if( size ==0) head = tail = temp;
     else{
         tail->next = temp;
         tail = temp;
@@ -34,14 +35,25 @@ void insertAtEnd( int val){
     size++;
 }
 
-};
 void display(){        
-      cout<<"display it";  
-   
+      Node* temp = head;
+      while ( head != NULL){
+       cout<<temp->val<<" ";
+       temp = temp->next; 
+      }
+          
 }
+
+};
 int main (){
-display();
-    
+LinkedList ll;
+ll.insertAtEnd(10);
+ll.insertAtEnd(20);
+ll.insertAtEnd(30);
+ll.insertAtEnd(50);
+ll.insertAtEnd(80);
+ll.display();
+cout<<endl;
+cout<<ll.size;
 
 }
-
