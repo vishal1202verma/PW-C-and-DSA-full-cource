@@ -93,7 +93,7 @@ int main()
     ll.display();
     ll.insertAtEnd(50);
     ll.insertAtEnd(80);
-    ll.display();
+    ll.display(); 
     ll.insertAtHead(05);
     ll.display();
     ll.insertAtIndx(2, 15);
