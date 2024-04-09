@@ -24,7 +24,7 @@ class ListNode{
         //     head = head->next;
         //     return head;
         // }
-        // // nth fro end = (len-n+1)th from start
+        // // nth from end = (len-n+1)th from start
         // int m = len - n + 1;
         // int idx = m-1; // the idx of node to be delete
         // temp = head;
@@ -35,7 +35,7 @@ class ListNode{
         ListNode* slow = head;
         ListNode* fast = head;
         for( int i=1; i<=n+1; i++){
-            if( fast == NULL) return head->next;
+            if( fast == NULL) cout<<head->next->val;
              fast = fast->next;
         }
         while( fast != NULL){
@@ -43,7 +43,7 @@ class ListNode{
             fast = fast->next;
         }
         slow->next = slow->next->next;
-        cout<<head;
+        cout<<head->next->val;
         
     }
      void display( ListNode* head){
@@ -66,9 +66,9 @@ class ListNode{
     c->next = d;
     d->next = e;
     display(a);
-    removeNthFromEnd(a, 5);
+    removeNthFromEnd(a, 10);
     display(a);
-
+       
 
 
 
