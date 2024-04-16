@@ -23,16 +23,16 @@ stack<int>temp;
 while( st.size() > 0){
     cout<<st.top()<<" ";
     int x = st.top();
-    st.pop();
     temp.push(x);
+    st.pop();
 }
 // putting elements back from temp to  st
 cout<<endl;
 while( temp.size()>0){
       cout<<temp.top()<<" ";
       int x = temp.top();
-      temp.pop();
       st.push(x);
+      temp.pop();
 }
 
 
