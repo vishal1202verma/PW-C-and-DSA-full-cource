@@ -54,4 +54,7 @@ while( rt.size() > 0){
 cout<<endl;
 print(st);
 
+
+
+
 }
