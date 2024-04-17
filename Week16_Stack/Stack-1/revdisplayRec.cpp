@@ -3,12 +3,12 @@
 #include<stack>
 using namespace std;
 // print the recursive stack 
-void  displayRec( stack<int> &st){
+void  revdisplayRec( stack<int> &st){
     if( st.size() == 0) return;
      cout<<st.top()<<" ";
      int x = st.top();
      st.pop();
-     displayRec(st);
+     revdisplayRec(st);
      st.push(x);
 
 }
@@ -21,6 +21,6 @@ st.push(4);
 st.push(6);
 st.push(8);
 st.push(10);
-displayRec(st);
+revdisplayRec(st);
 
 }
