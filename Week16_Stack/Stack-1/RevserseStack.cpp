@@ -24,6 +24,15 @@ void pushAtbottomRec(stack<int> &st , int val){
      st.push(x);
 
 }
+void reverse(stack<int>&st){
+    if( st.size() == 1) return;
+     int x = st.top();
+     st.pop();
+     reverse(st); // recursion
+     pushAtbottomRec(st, x); // push at bottom the top of the st;  
+
+}
+
 int main (){
 // declaration of the stack
 stack<int>st;
@@ -31,14 +40,11 @@ st.push(2);
 st.push(4);
 st.push(6);
 st.push(8);
+st.push(10);
 displayRec(st);
-pushAtbottomRec(st , 10);
+reverse(st);
 cout<<endl;
 displayRec(st);
-// MS from MIT USA In AI and ML 
-
-
-
 
 
 
