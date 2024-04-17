@@ -20,9 +20,9 @@ void  print( stack<int>st){
     cout<<endl;
 }
 // push at bottom function
-void pushAtbottom(stack<int> &st , int val){
+void pushAtIndex(stack<int> &st , int val, int idx){
  stack<int>temp;
- while( st.size()>0){
+ while( st.size()>idx-1){
     temp.push(st.top());
     st.pop();
  }
@@ -43,7 +43,7 @@ st.push(4);
 st.push(6);
 st.push(8);
 print(st);
-pushAtbottom(st , 10);
+pushAtIndex(st , 5, 3 );
 print(st);
 
 
