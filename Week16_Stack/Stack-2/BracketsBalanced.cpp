@@ -20,13 +20,15 @@ bool isBalanced( string s){
       }
       if( st.size() ==0) return true;
       else  return false;
+
        
 }
 
 int main (){
-string s = "()()()";    
-cout<<isBalanced(s);
+string s = "()()())()";    
+cout<<isBalanced(s)<<endl;
 cout<<"vishal verma ji ";
+
 
 
 
