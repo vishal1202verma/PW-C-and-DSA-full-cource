@@ -2,7 +2,8 @@
 #include<stack>
 using namespace std;
 int main (){
-int arr[] = {3, 1, 2, 5, 4, 6, 2, 3};
+// int arr[] = {3, 1, 2, 5, 4, 6, 2, 3};
+int arr[] = {100, 80, 60, 81, 70, 60, 75, 85};
 int n = sizeof(arr)/sizeof(arr[0]);
 // print the array
 for( int i=0; i<n; i++){
@@ -32,5 +33,6 @@ for( int i=0; i<n; i++){
     cout<<prev[i]<<" ";
 }
 cout<<endl;
+
 
 }
