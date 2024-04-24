@@ -15,11 +15,9 @@ int solve( int v1, int v2, int ch){
       else return v1/v2; 
 }
 int main (){
-    int x = 3*5+4/5-1; // this is infix evaltuion 
-    cout<<x<<endl;
-
+    
     // now we will solve this string by using two Stacks 
-    string s = "2+3*4/2-3";
+    string s = "1+(2+6)*4/2-3"; // answer = 14
     stack<int>val;
     stack<char>opr;
     for( int i=0; i<s.length(); i++){
@@ -31,9 +29,27 @@ int main (){
         }
         else { // not digit
              if(opr.size() ==0) opr.push(s[i]);
+             else if (s[i] == '(') opr.push(s[i]);
+             else if ( opr.top() == '(') opr.push(s[i]);
+             else if (s[i] == ')'){
+                 while( opr.top() != '('){ // hame kamm karna hain solve karne ka 
+                    char ch = opr.top(); // ( * , / > + , - )
+                    opr.pop();
+                    int val2 = val.top();
+                    val.pop();
+                    int val1= val.top();
+                    val.pop();
+                    int ans = solve( val1, val2, ch);
+                    val.push(ans);
+
+
+                 }
+                 opr.pop(); // opening brackets ko udha do
+             }
              else if(priority(s[i]) > priority(opr.top())){
                    opr.push(s[i]);
              }
+             
              else{ // work karna hain if priority(s[i]) <= priority[opr.top()
                 while(opr.size()>0 && priority(s[i]) <= priority(opr.top())){
                     // i have to do val1 opr val2
@@ -68,5 +84,7 @@ int main (){
 
         }
    cout<<val.top(); // val top will give us the answer
+
+
 
 }
