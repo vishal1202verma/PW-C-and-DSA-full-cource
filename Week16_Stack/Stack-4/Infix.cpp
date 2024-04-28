@@ -40,7 +40,7 @@ int main (){
                     char ch = opr.top(); // ( * , / > + , - )
                     opr.pop();
                     int val2 = val.top();
-                    val.pop();
+                    val.pop(); 
                     int val1= val.top();
                     val.pop();
                     int ans = solve( val1, val2, ch);

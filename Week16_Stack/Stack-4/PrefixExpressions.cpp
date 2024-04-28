@@ -1,12 +1,13 @@
 #include<iostream>
 #include<stack>
 #include<string>
+#include<climits>
 using namespace std;
 
 int priority( char ch){
   if( ch == '+' || ch == '-') return 1;
   else return 2; // *, /
-  
+    
 }
 string solve( string v1, string v2, char ch){
     // we have to store string into the ans
@@ -22,13 +23,13 @@ int main (){
     
     // now we will solve this string by using two Stacks 
     string s = "2+6*4/8-3"; // answer will be = -+2/*648
-    stack<string>val;
-    stack<char>opr;
+    stack<string>val; //  val store's stack
+    stack<char>opr;  // operator stores the stack
     for( int i=0; i<s.length(); i++){
           // check if s[i] is digit
         int ascii = (int)s[i];
         if(s[i]>=48 && s[i]<=57){ // digit ( 0 - 9) asci val is ( 48 - 57)
-            val.push( to_string(s[i]-48));
+            val.push(to_string(s[i]-48));
         }
         else { // not digit
              if(opr.size() ==0) opr.push(s[i]);

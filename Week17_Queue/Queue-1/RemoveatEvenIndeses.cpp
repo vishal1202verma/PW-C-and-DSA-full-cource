@@ -15,7 +15,7 @@ void display(queue<int> &q){
 }
 void removeAtEven(queue<int> &q){
    int n = q.size();
-   for( int i=1; i<=n; i++){
+   for( int i=0; i<n; i++){
         if( i%2 == 0){
            q.pop();             
         }
@@ -25,7 +25,7 @@ void removeAtEven(queue<int> &q){
             q.push(x);
         }
    }
-
+   
 }
 
 int main (){
@@ -41,7 +41,7 @@ int main (){
   display(q);
   removeAtEven(q);
   display(q);   
-  
+      
 
 
 
