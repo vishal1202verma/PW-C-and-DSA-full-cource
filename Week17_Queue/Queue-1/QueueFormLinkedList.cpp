@@ -41,7 +41,9 @@ public :
         cout<<"Queue is Empty !";
         return ;
       }
+      Node* temp = head;
       head = head->next;
+      delete(temp);
       size --;
  }
  
@@ -84,6 +86,7 @@ q.push(30);
 q.push(40);
 q.push(50);
 q.display();
+
 
 
 }
