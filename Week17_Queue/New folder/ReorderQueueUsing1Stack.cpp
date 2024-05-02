@@ -52,6 +52,5 @@ int main (){
         int x = st.top();
         cout<<x<<" ";
         st.pop();
-    } // 1 5 2 6 3 7 4 8 // this is our answer
-    
+    } // 1 5 2 6 3 7 
 }
