@@ -20,7 +20,18 @@ void display( Node* root){
     cout<<root->val<<" "; 
     display(root->left); // recursion 
     display(root->right);
-       
+}
+  
+
+int sum( Node* root){
+    if( root == NULL) return 0;
+    int n = root->val;
+    int leftSum = sum( root->left);
+    int rightSum = sum( root->right);
+    int  sum = n + leftSum + rightSum;
+    return sum;
+   
+
 }
 
 int main (){
@@ -41,6 +52,8 @@ c->left = f;
 c->right = g;
 
 display(a);
+cout<<endl;   
+cout<<sum(a);
 
 
 
