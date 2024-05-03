@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Node{
+   class Node{
    public:
    int val;
    Node* left;
@@ -20,18 +20,15 @@ void display( Node* root){
     cout<<root->val<<" "; 
     display(root->left); // recursion 
     display(root->right);
+       
 }
+// size of the array 
+int Size( Node* root){
+  if( root == NULL) return 0;  
+  return 1+ Size(root->left) + Size( root-> right);
+  // by recursion case
   
-
-int sum( Node* root){
-    if( root == NULL) return 0;
-    int n = root->val;
-    int leftSum = sum( root->left);
-    int rightSum = sum( root->right);
-    int  sum = n + leftSum + rightSum;
-    return sum;
-   
-
+  
 }
 
 int main (){
@@ -50,11 +47,9 @@ b->left = d;
 b->right = e;
 c->left = f;
 c->right = g;
-
 display(a);
-cout<<endl;   
-cout<<sum(a);
-
+cout<<endl;
+cout<<Size(a);
 
 
 
