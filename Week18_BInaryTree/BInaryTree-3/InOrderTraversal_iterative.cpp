@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stack>
+#include<queue>
 #include<vector>
 using namespace std;
 class Node{
@@ -55,7 +56,16 @@ int main (){
     c->right = g;
 
     InOrder(a);
-
+    cout<<endl;
+    queue<int>q;
+    q.push(1);
+    q.push(2);
+    q.push(3);
+    while(q.size()>0){
+        int n = q.front();
+        q.pop();
+        cout<<n<<" ";
+    }
     
 
 }

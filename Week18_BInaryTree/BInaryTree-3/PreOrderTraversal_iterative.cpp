@@ -14,7 +14,7 @@ class Node{
         this->right = NULL;
     }
 };
-
+     
 void PreOrder(Node* root){
      stack<Node*>st;
      vector<int>v;

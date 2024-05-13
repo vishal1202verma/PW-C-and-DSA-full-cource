@@ -15,7 +15,7 @@ class Node{
     }
 };
 
-void PreOrder(Node* root){
+void PostOrder(Node* root){
      stack<Node*>st;
      vector<int>v;
      st.push(root);
@@ -49,7 +49,7 @@ int main (){
     b->right = e;
     c->left = f;
     c->right = g;
-    PreOrder(a);
+    PostOrder(a);
     
 
 }
